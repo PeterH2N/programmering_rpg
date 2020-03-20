@@ -1,7 +1,7 @@
 #include "equipment.h"
 namespace equipment
 {
-    equipment::equipment(std::string name, int price, std::string type, int weight, std::string description, bool available)
+    equipment::equipment(std::string name, int price, equip_type type, int weight, std::string description, bool available)
     {
         if (name != "")
         this->name = name;
@@ -34,7 +34,7 @@ namespace equipment
     {
         return this->price;
     }
-    std::string equipment::get_type()
+    equipment::equip_type equipment::get_type()
     {
         return this->type;
     }
@@ -52,8 +52,40 @@ namespace equipment
         return this->availabe;
     }
 
+    std::string equipment::print_type()
+    {
+        switch(this->type)
+        {
+        case equip_type::weapon:
+            return "weapon";
+        case equip_type::ammo:
+            return "ammo";
+        case equip_type::armor:
+            return "armor";
+        case equip_type::trinket:
+            return "trinket";
+        case equip_type::consumable:
+            return "consumable";
+        }
+    }
+
     void equipment::print()
     {
-        std::cout << this->name << "\n" << this->type <<"\n" << this->price << "\n" << this->weight << "\n" << this->description;
+        std::cout << this->name << ":\n" << print_type() <<"\n" << this->price << "\n" << this->weight << "\n" << this->description;
     }
+
+    equipment wooden_sword(
+            //name
+            "Wooden Sword",
+            //price
+            10,
+            //type
+            equipment::equip_type::weapon,
+            //weight
+            500,
+            //description
+            "Sword made from oak",
+            //availablility
+            true
+            );
 }

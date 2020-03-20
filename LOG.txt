@@ -1,0 +1,16 @@
+20-03-20
+Modular programming, er en måde at skrive kode på, hvorved man deler
+sin funktionalitet op i mange funktioner, så man kan kalde dem
+enkeltvis. Det skaber en god læselighed, og oversigt over koden.
+Jeg vil mene at vi har brugt modular programming i alle projekter,
+eller i al fald forsøgt.
+
+side effect betyder at en funktion ændrer på en variabel, som 
+hverken er i funktionen selv, og heller ej i klassen. 
+Dette gøres når vi bruger pass by reference.
+
+forskellen mellem procedural og objektorienteret er, at procedural
+ændrer variabler udenfor dens... område, mens objektorienteret
+kun ændrer variabler i den klasse man er i.
+Med objektorieteret programmering er det sværere at ændre i noget
+der ikke skulle ændres, kan jeg forestille mig.
