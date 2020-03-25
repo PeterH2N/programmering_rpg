@@ -14,3 +14,6 @@ forskellen mellem procedural og objektorienteret er, at procedural
 kun ændrer variabler i den klasse man er i.
 Med objektorieteret programmering er det sværere at ændre i noget
 der ikke skulle ændres, kan jeg forestille mig.
+
+25-03-20
+equipment klassen er færdig for nu, og jeg er begyndt på character klassen. Jeg synes stadig det er uelegant at skulle have en funktion til hver variabel for at kunne returnere den, men jeg ved ikke om der er en bedre løsning.
